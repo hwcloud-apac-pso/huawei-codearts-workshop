@@ -59,3 +59,54 @@ This section is to validate the functionality of the continuous integration and 
     ![figure8.1.8](./images/8.1.8.png)
 
 <p align="center"> Figure 8.1.8: Container image built and pushed to SWR </p>
+
+### Validation of Production Environment
+
+1. For the production pipeline, we need to manually trigger the pipeline with the use of the same piece of code that had been submitted during the validation on SIT environment. As the pipeline is triggered manually, we need to set the runtime parameters such as the buildVersion and imageName. Set the runtime parameters with the below information and follow the instructions in the below screenshots.
+
+    buildVersion: v1.0
+    imagName: app-demo-build
+
+    ![figure8.2.0](./images/8.2.0.png)
+
+<p align="center"> Figure 8.2.0: Manually trigger the production pipeline </p>
+
+2. The production pipeline requires approval from the project manager to approve the deployment to the production cluster as shown in Figure 2.1.8.
+
+    ![figure8.2.1](./images/8.2.1.png)
+
+<p align="center"> Figure 8.2.1: Approval from the project manager to approve the deployment to the production cluster </p>
+
+3. If you are the project manager, log in to the Huawei Cloud management console and access the CodeArts Pipeline service. Click on the button as shown in the below screenshots to approve the deployment to the production clusters.
+
+    ![figure8.2.2](./images/8.2.2.png)
+
+<p align="center"> Figure 8.2.2: Approval from the project manager to approve the deployment to the production cluster </p>
+
+4. Verify the production pipeline where it continues to do the deployment once it is approved by the project manager.
+
+    ![figure8.2.3](./images/8.2.3.png)
+
+<p align="center"> Figure 8.2.3: Production pipeline run successfully </p>
+
+5. Verify the container image is being pushed to the SWR.
+
+    ![figure8.2.4](./images/8.2.4.png)
+
+<p align="center"> Figure 8.2.4: Container image built and stored in SWR </p>
+
+6. Configure a load balancer in the production cluster in order to access the web application using the EIP bound. Follow the instructions in Step 4 under section 2.1 to configure the ELB.
+ 
+    ![figure8.2.5](./images/8.2.5.png)
+
+<p align="center"> Figure 8.2.5: Container image built and stored in SWR </p>
+
+7. Obtain the EIP address of the load balancer and paste it into any web browser to access the web application. If you see a similar result as in Figure 2.2.6, it indicates that you had completed the configuration and validation on the CD pipeline.
+
+    ![figure8.2.6](./images/8.2.6.png)
+
+<p align="center"> Figure 8.2.6: Obtain the EIP address of the load balancer </p>
+
+![figure8.2.7](./images/8.2.7.png)
+
+<p align="center"> Figure 8.2.7: Verify the web application </p>
