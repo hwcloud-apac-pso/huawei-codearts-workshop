@@ -10,15 +10,15 @@ This section is to validate the functionality of the continuous integration and 
 <p align="center"> Figure 8.1.0: Modify the index.php file </p>
 
 2. Within the <style> tag, uncomment the scripts for the background parameter for all the sections as mentioned below:
-* .highlight-box {}
-* footer {}
-* .shaded-section h2 {}
+    * .highlight-box {}
+    * footer {}
+    * .shaded-section h2 {}
 
 3. Once modify the code, commit changes to the CodeArts Repo using the below command to trigger the SIT pipeline by following the instructions in the below screenshot.
 
-```$ git commit -am “deploy history red version”```
+    ```$ git commit -am “deploy history red version”```
 
-```$ git push```
+    ```$ git push```
 
 ![figure8.1.1](./images/8.1.1.png)
 
