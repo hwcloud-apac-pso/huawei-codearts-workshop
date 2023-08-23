@@ -67,7 +67,8 @@
 
     *<p align="center"> Figure 9.2.3: Configure the runtime parameters to initiate the deployment </p>*
 
-6. To patch the service from blue deployments to green deployments, we will use the command below. Before patching the service, you should have connected to the production cluster from your local machine by following the steps stated in Connect to CCE using kubectl.
+6. To patch the service from blue deployments to green deployments, we will use the command below. Before patching the service, you should have connected to the production cluster from your local machine by following the steps stated in [Connect to CCE using kubectl](https://support.huaweicloud.com/intl/en-us/usermanual-cce/cce_10_0107.html).
+
     ```$ kubectl -n ns-devops patch service elb-app-prod  -p '{"spec":{"selector":{"app": "php-fpm-nginx-green"}}}'```
 
 7. If you have successfully patched the service from blue to green deployment, you will see a similar result as the below screenshots.
@@ -83,7 +84,7 @@
     *<p align="center"> Figure 9.2.5: Web Application before patching </p>*
 
     **After patching the services,**
-    
+
     ![figure9.2.6](./images/9.2.6.png)
     
     *<p align="center"> Figure 9.2.6: ELB after patching </p>*
