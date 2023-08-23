@@ -43,7 +43,7 @@
     * Image Tag: v1.1
     * Web Application: blue color background
 
-2. Now, we are going to simulate the blue-green deployment strategy in the production environment. As shown in Figure 9.2.0, there will be two versions of the web application being deployed to the production cluster where one application is in active mode and another remains idle. The load balancer bound to the production cluster will first point to the current version (blue color background, v1.1) of the web application. If the new version of the application (green color background, v1.2) had tested successfully in the SIT environment, then the load balancer will switch to point to the new version of the web application. This is to ensure minimum downtime of the web application when there is a frequent update on the web application based on demand and requirements.
+2. Now, we are going to simulate the blue-green deployment strategy in the production environment. As shown in Figure 9.2.0, there will be two versions of the web application being deployed to the production cluster where one application is in active mode and another remains idle. The load balancer bound to the production cluster will first point to the current version (blue color background, v1.1) of the web application. If the new version of the application (green color background, v1.2) had tested successfully in the SIT environment, then the load balancer will switch to point to the new version of the web application. In case there is any failure in the new release application, you can easily switch back to the previous version as the version is retained in the production environment.
 
     ![figure9.2.0](./images/9.2.0.png)
 
