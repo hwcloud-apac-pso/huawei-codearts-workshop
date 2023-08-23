@@ -4,14 +4,14 @@
 1. At this stage, you have a history version of the application in both of your environments (SIT and Production Clusters) with a container image tagged as below.
 
     SIT Cluster:
-    Image Name: app-demo-build
-    Image Tag: v1.0-timestamp
-    Web Application: red color background
+    * Image Name: app-demo-build
+    * Image Tag: v1.0-timestamp
+    * Web Application: red color background
 
     Production Cluster:
-    Image Name: app-demo-ga
-    Image Tag: v1.0
-    Web Application: red color background
+    * Image Name: app-demo-ga
+    * Image Tag: v1.0
+    * Web Application: red color background
 
 2. Now, we would like to have some changes to the web application by changing the background color of the web page to different color codes including the color codes of the wording. The expected result is shown below.
 
@@ -29,8 +29,8 @@
 
 5. Deploy a similar application to the production cluster by manually triggering the pipeline with the settings of below runtime parameters.
 
-    buildVersion: v1.1
-    imageName: app-demo-ga
+    * buildVersion: v1.1
+    * imageName: app-demo-ga
 
 6. Verify the web application had changed to the blue color background in SIT environment.
 
@@ -39,9 +39,9 @@
 1. At this stage, you have a new version of the application in the production environment with a container image tag as below.
 
     Production Cluster:
-    Image Name: app-demo-ga
-    Image Tag: v1.1
-    Web Application: blue color background
+    * Image Name: app-demo-ga
+    * Image Tag: v1.1
+    * Web Application: blue color background
 
 2. Now, we are going to simulate the blue-green deployment strategy in the production environment. As shown in Figure 9.2.0, there will be two versions of the web application being deployed to the production cluster where one application is in active mode and another remains idle. The load balancer bound to the production cluster will first point to the current version (blue color background, v1.1) of the web application. If the new version of the application (green color background, v1.2) had tested successfully in the SIT environment, then the load balancer will switch to point to the new version of the web application. This is to ensure minimum downtime of the web application when there is a frequent update on the web application based on demand and requirements.
 

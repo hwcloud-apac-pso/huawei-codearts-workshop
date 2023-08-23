@@ -8,19 +8,19 @@ This section will guide you step by step to set up the project and repository in
 
     ![figure7.1.0](./images/7.1.0.png)
 
-<p align="center"> Figure 7.1.0: Create CodeArts Project </p>
+    <p align="center"> Figure 7.1.0: Create CodeArts Project </p>
 
 2. Under the services tab, create a new repository by following the instructions in the below screenshots.
 
     ![figure7.1.1](./images/7.1.1.png)
 
-<p align="center"> Figure 7.1.1: Create CodeArts Project Repository </p>
+    <p align="center"> Figure 7.1.1: Create CodeArts Project Repository </p>
 
 3. Before you can clone the private repository, or perform any git push actions, you should always set the personal SSH keys to grant the permission of your local machine to the private repository. Follow the instruction below to set the permission for the private repository.
 
     ![figure7.1.2](./images/7.1.2.png)
 
-<p align="center"> Figure 7.1.2: Configure SSH Key </p>
+    <p align="center"> Figure 7.1.2: Configure SSH Key </p>
 
 4. Run the below command to generate the SSH key from your local machine. The resulting output will prompt you the path to where your SSH Keys have been stored.
 
@@ -34,17 +34,17 @@ This section will guide you step by step to set up the project and repository in
 
     ![figure7.1.3](./images/7.1.3.png)
 
-<p align="center"> Figure 7.1.3: Configure SSH Key </p>
+    <p align="center"> Figure 7.1.3: Configure SSH Key </p>
 
 7. Clone the repository to your local machine by following the instructions in the below screenshot.
 
     ![figure7.1.4](./images/7.1.4.png)
 
-<p align="center"> Figure 7.1.4: Clone Project Repository </p>
+    <p align="center"> Figure 7.1.4: Clone Project Repository </p>
 
-Open an integrated terminal in Visual Studio Code, or any other terminal, and enter the command below to clone the repository.
+    Open an integrated terminal in Visual Studio Code, or any other terminal, and enter the command below to clone the repository.
 
-```$ git clone https://replace-it-with-your-repository-path```
+    ```$ git clone https://replace-it-with-your-repository-path```
 
 8. Obtain the source code template by cloning the repository with the below command.
 
@@ -60,7 +60,7 @@ Open an integrated terminal in Visual Studio Code, or any other terminal, and en
 
     ![figure7.1.5](./images/7.1.5.png)
 
-<p align="center"> Figure 7.1.5: Git commit files to Project Repository </p>
+    <p align="center"> Figure 7.1.5: Git commit files to Project Repository </p>
 
 ### Set up the production and non-production Cloud Container Engine (CCE) environment
 
@@ -70,25 +70,25 @@ This section guides you on preparing the CCE clusters for two environments, SIT 
 
     ![figure7.2.0](./images/7.2.0.png)
 
-<p align="center"> Figure 7.2.0: CCE Cluster for Production and Non-Production Environment </p>
+    <p align="center"> Figure 7.2.0: CCE Cluster for Production and Non-Production Environment </p>
 
 2. Obtain the kubeconfig file for every single cluster to configure service endpoints in CodeArts by following the instructions in the below screenshots.
 
     ![figure7.2.1](./images/7.2.1.png)
 
-<p align="center"> Figure 7.2.1: Obtain kubeconfig file in CCE Cluster </p>
+    <p align="center"> Figure 7.2.1: Obtain kubeconfig file in CCE Cluster </p>
 
 3. Configure the service endpoints for the non-production CCE cluster under your project in CodeArts by following the instructions in the below screenshot.
 
     ![figure7.2.2](./images/7.2.2.png)
 
-<p align="center"> Figure 7.2.2: Configure Service Endpoints for non-production CCE Cluster in CodeArts Project </p>
+    <p align="center"> Figure 7.2.2: Configure Service Endpoints for non-production CCE Cluster in CodeArts Project </p>
 
 4. Configure the service endpoints for the production CCE cluster under your project in CodeArts by following the instructions in the below screenshot.
 
     ![figure7.2.3](./images/7.2.3.png)
 
-<p align="center"> Figure 7.2.3: Configure Service Endpoints for production CCE Cluster in CodeArts Project </p>
+    <p align="center"> Figure 7.2.3: Configure Service Endpoints for production CCE Cluster in CodeArts Project </p>
 
 ### Configure the Continuous Integration Pipeline task
 
@@ -96,51 +96,51 @@ This section guides you on preparing the CCE clusters for two environments, SIT 
 
     ![figure7.3.0](./images/7.3.0.png)
 
-<p align="center"> Figure 7.3.0: Configure CodeArts Build Task </p>
+    <p align="center"> Figure 7.3.0: Configure CodeArts Build Task </p>
 
-![figure7.3.1](./images/7.3.1.png)
+    ![figure7.3.1](./images/7.3.1.png)
 
-<p align="center"> Figure 7.3.1: Configure CodeArts Build Task </p>
+    <p align="center"> Figure 7.3.1: Configure CodeArts Build Task </p>
 
 2. Configure the CodeArts Deployment task for the pipeline using Deploy services in CodeArts by following the instructions in the below screenshots.
 
     ![figure7.3.2](./images/7.3.2.png)
 
-<p align="center"> Figure 7.3.2: Configure CodeArts Deployment Task for non-production CCE cluster </p>
+    <p align="center"> Figure 7.3.2: Configure CodeArts Deployment Task for non-production CCE cluster </p>
 
-![figure7.3.3](./images/7.3.3.png)
+    ![figure7.3.3](./images/7.3.3.png)
 
-<p align="center"> Figure 7.3.3: Configure CodeArts Deployment Task for non-production CCE cluster </p>
+    <p align="center"> Figure 7.3.3: Configure CodeArts Deployment Task for non-production CCE cluster </p>
 
 3. Configure the CodeArts Pipeline using the Pipeline services in CodeArts by following the instructions in the below screenshots.
 
-![figure7.3.4](./images/7.3.4.png)
+    ![figure7.3.4](./images/7.3.4.png)
 
-<p align="center"> Figure 7.3.4: Configure CodeArts Pipeline for non-production CCE cluster </p>
+    <p align="center"> Figure 7.3.4: Configure CodeArts Pipeline for non-production CCE cluster </p>
 
-![figure7.3.5](./images/7.3.5.png)
+    ![figure7.3.5](./images/7.3.5.png)
 
-<p align="center"> Figure 7.3.5: Configure CodeArts Pipeline for non-production CCE cluster </p>
+    <p align="center"> Figure 7.3.5: Configure CodeArts Pipeline for non-production CCE cluster </p>
 
-![figure7.3.6](./images/7.3.6.png)
+    ![figure7.3.6](./images/7.3.6.png)
 
-<p align="center"> Figure 7.3.6: Configure CodeArts Pipeline for non-production CCE cluster </p>
+    <p align="center"> Figure 7.3.6: Configure CodeArts Pipeline for non-production CCE cluster </p>
  
-![figure7.3.7](./images/7.3.7.png)
+    ![figure7.3.7](./images/7.3.7.png)
 
-<p align="center"> Figure 7.3.7: Configure CodeArts Pipeline for non-production CCE cluster </p>
+    <p align="center"> Figure 7.3.7: Configure CodeArts Pipeline for non-production CCE cluster </p>
 
 4. Configure the CodeArts Pipeline parameters by following the instructions in the below screenshots.
 
-![figure7.3.8](./images/7.3.8.png)
+    ![figure7.3.8](./images/7.3.8.png)
 
-<p align="center"> Figure 7.3.8: Configure CodeArts Pipeline for non-production CCE cluster </p>
+    <p align="center"> Figure 7.3.8: Configure CodeArts Pipeline for non-production CCE cluster </p>
 
 5. Configure the CodeArts Pipeline execution plan by following the instructions in the below screenshots.
 
-![figure7.3.9](./images/7.3.9.png)
+    ![figure7.3.9](./images/7.3.9.png)
 
-<p align="center"> Figure 7.3.9: Configure CodeArts Pipeline for non-production CCE cluster </p>
+    <p align="center"> Figure 7.3.9: Configure CodeArts Pipeline for non-production CCE cluster </p>
 
 ### Configure the Continuous Deployment Pipeline task
 
@@ -148,40 +148,40 @@ This section guides you on preparing the CCE clusters for two environments, SIT 
 
     ![figure7.4.0](./images/7.4.0.png)
 
-<p align="center"> Figure 7.4.0: Configure CodeArts Deployment Task for production CCE cluster (1st version application) </p>
+    <p align="center"> Figure 7.4.0: Configure CodeArts Deployment Task for production CCE cluster (1st version application) </p>
 
-![figure7.4.1](./images/7.4.1.png)
+    ![figure7.4.1](./images/7.4.1.png)
 
-<p align="center"> Figure 7.4.1: Configure CodeArts Deployment Task for production CCE cluster (1st version application) </p>
+    <p align="center"> Figure 7.4.1: Configure CodeArts Deployment Task for production CCE cluster (1st version application) </p>
 
-![figure7.4.2](./images/7.4.2.png)
+    ![figure7.4.2](./images/7.4.2.png)
 
-<p align="center"> Figure 7.4.2: Configure CodeArts Deployment Task for production CCE cluster (2nd version application) </p>
+    <p align="center"> Figure 7.4.2: Configure CodeArts Deployment Task for production CCE cluster (2nd version application) </p>
 
-![figure7.4.3](./images/7.4.3.png)
+    ![figure7.4.3](./images/7.4.3.png)
 
-<p align="center"> Figure 7.4.3: Configure CodeArts Deployment Task for production CCE cluster (2nd version application) </p>
+    <p align="center"> Figure 7.4.3: Configure CodeArts Deployment Task for production CCE cluster (2nd version application) </p>
 
 2. Configure the CodeArts Pipeline using the Pipeline services in CodeArts by following the instructions in the below screenshots.
 
     ![figure7.4.4](./images/7.4.4.png)
 
-<p align="center"> Figure 7.4.4: Configure CodeArts Pipeline for production CCE cluster (1st version application) </p>
+    <p align="center"> Figure 7.4.4: Configure CodeArts Pipeline for production CCE cluster (1st version application) </p>
 
 3. Configure the CodeArts Pipeline parameters by following the instructions in the below screenshots.
 
     ![figure7.4.5](./images/7.4.5.png)
 
-<p align="center"> Figure 7.4.5: Configure CodeArts Pipeline for production CCE cluster (1st version application) </p>
+    <p align="center"> Figure 7.4.5: Configure CodeArts Pipeline for production CCE cluster (1st version application) </p>
 
-![figure7.4.6](./images/7.4.6.png)
+    ![figure7.4.6](./images/7.4.6.png)
 
-<p align="center"> Figure 7.4.6: Configure CodeArts Pipeline for production CCE cluster (1st version application) </p>
+    <p align="center"> Figure 7.4.6: Configure CodeArts Pipeline for production CCE cluster (1st version application) </p>
 
-![figure7.4.7](./images/7.4.7.png)
+    ![figure7.4.7](./images/7.4.7.png)
 
-<p align="center"> Figure 7.4.7: Configure CodeArts Pipeline for production CCE cluster (1st version application) </p>
+    <p align="center"> Figure 7.4.7: Configure CodeArts Pipeline for production CCE cluster (1st version application) </p>
 
-![figure7.4.8](./images/7.4.8.png)
+    ![figure7.4.8](./images/7.4.8.png)
 
-<p align="center"> Figure 7.4.8: Configure CodeArts Pipeline for production CCE cluster (2nd version application) </p>
+    <p align="center"> Figure 7.4.8: Configure CodeArts Pipeline for production CCE cluster (2nd version application) </p>
