@@ -4,9 +4,7 @@
 
 **Continuous Integration and Continuous Deployment (CI/CD)** is a software development approach that aims to streamline and automate the process of building, testing, and deploying software applications. It's a crucial part of modern software development practices that helps teams deliver high-quality code more rapidly and reliably. CI/CD promotes collaboration among developers, reduces manual errors, and accelerates the time it takes to turn code changes into production-ready applications.
 
-<meta http-equiv="refresh" content="0; URL=https://support.huaweicloud.com/intl/en-us/devcloud/index.html">
-
-**Huawei CodeArts** is a one-stop DevSecOps platform that provides out-of-the-box cloud services for requirement delivery, code commit, check, build, verification, deployment, and release throughout the entire software lifecycle to achieve continuous integration and continuous deployment.
+[Huawei CodeArts](https://support.huaweicloud.com/intl/en-us/devcloud/index.html) is a one-stop DevSecOps platform that provides out-of-the-box cloud services for requirement delivery, code commit, check, build, verification, deployment, and release throughout the entire software lifecycle to achieve continuous integration and continuous deployment.
 
 In this comprehensive guide, we will explore the world of CodeArts service on Huawei Cloud, leverage the features provided in the CodeArts service to build different Continuous Integration and Continuous Deployment pipeline to demonstrate different scenarios as below:
 * **Automated Continuous Integration pipeline triggered via code commit**
