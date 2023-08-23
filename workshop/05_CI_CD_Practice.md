@@ -95,22 +95,26 @@
 
 ### Version control rollback with the use of image tagging for the production environment
 
-To simulate the version control rollback in the production environment, we need to patch the service back to the blue deployment from the last step. This is because the deployment contains two versions of the web application (red and blue color background). We can simulate the scenario of version rollback of the web application from version v1.1 (blue color background) to v1.0 (red color background). 
+To simulate the version control rollback in the production environment, we need to patch the service back to the blue deployment from the last step. This is because the deployment contains two versions of the web application (red and blue color background). We can simulate the scenario of version rollback of the web application from version v1.1 (blue color background) to v1.0 (red color background) as shown in Figure 9.3.0. 
+
+![figure9.3.0](./images/9.3.0.png)
+
+ *<p align="center"> Figure 9.3.0: Version Control Rollback </p>*
 
 1. First, run the command below to point the ELB to the blue deployment.
     
     ```$ kubectl -n ns-devops patch service elb-app-prod  -p '{"spec":{"selector":{"app": "php-fpm-nginx"}}}'```
 
-    ![figure9.3.0](./images/9.3.0.png)
+    ![figure9.3.1](./images/9.3.1.png)
     
-    *<p align="center"> Figure 9.3.0: ELB of Production Cluster </p>*
+    *<p align="center"> Figure 9.3.1: ELB of Production Cluster </p>*
 
 2. Access the web application to ensure that the web application is in blue color background.
 
 3. Navigate to the CodeArts Deploy service, and search for the deploy task where the buildVersion is v1.0. Rollback the wen application to v1.0 which represents the red color background.
 
-    ![figure9.3.1](./images/9.3.1.png)
+    ![figure9.3.2](./images/9.3.2.png)
     
-    *<p align="center"> Figure 9.3.1: Version Rollback </p>*
+    *<p align="center"> Figure 9.3.2: Version Rollback </p>*
 
 4. Verify the web application had rollback to the history version of the red color background.
