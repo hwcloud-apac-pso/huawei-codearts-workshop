@@ -17,13 +17,13 @@
 
     ![figure9.1.0](./images/9.1.0.png)
 
-    <p align="center"> Figure 9.1.0: Expected result for new web application </p>
+    *<p align="center"> Figure 9.1.0: Expected result for new web application </p>*
 
 3. To achieve the above result, modify the source code in the ```index.php file```.  Within the ```<style>``` tag, perform the actions as in the below screenshots for the styling of different headers.
 
     ![figure9.1.1](./images/9.1.1.png)
 
-    <p align="center"> Figure 9.1.1: Modify the scripts in the index.php </p>
+    *<p align="center"> Figure 9.1.1: Modify the scripts in the index.php </p>*
 
 4. Once modified, commit the changes to the CodeArts Repo, and you should see the SIT pipeline is automatically triggered upon the source code commit. Verify the web application had changed to the blue color background in SIT environment.
 
@@ -47,25 +47,25 @@
 
     ![figure9.2.0](./images/9.2.0.png)
 
-    <p align="center"> Figure 9.2.0: Modify the scripts in the index.php </p>
+    *<p align="center"> Figure 9.2.0: Modify the scripts in the index.php </p>*
 
 3. To achieve such a deployment strategy, we need to release a new version of the application to the SIT and Production environment. Modify the source code in the ```index.php``` file, within the ```<style>``` tag, and perform the actions as in the below screenshots for the styling of different headers.
 
     ![figure9.2.1](./images/9.2.1.png)
 
-    <p align="center"> Figure 9.2.1: Modify the scripts in the index.php </p>
+    *<p align="center"> Figure 9.2.1: Modify the scripts in the index.php </p>*
 
 4. Select the production pipeline for green deployment, set the runtime parameters, and initiate the deployment to deploy the web application to the production cluster. 
 
     ![figure9.2.2](./images/9.2.2.png)
 
-    <p align="center"> Figure 9.2.2: Configure the runtime parameters to initiate the deployment </p>
+    *<p align="center"> Figure 9.2.2: Configure the runtime parameters to initiate the deployment </p>*
 
 5. Navigate to the production cluster management console, you should see two deployments with different image tags.
 
     ![figure9.2.3](./images/9.2.3.png)
 
-    <p align="center"> Figure 9.2.3: Configure the runtime parameters to initiate the deployment </p>
+    *<p align="center"> Figure 9.2.3: Configure the runtime parameters to initiate the deployment </p>*
 
 6. To patch the service from blue deployments to green deployments, we will use the command below. Before patching the service, you should have connected to the production cluster from your local machine by following the steps stated in Connect to CCE using kubectl.
     ```$ kubectl -n ns-devops patch service elb-app-prod  -p '{"spec":{"selector":{"app": "php-fpm-nginx-green"}}}'```
@@ -74,20 +74,20 @@
     Before patching,
     ![figure9.2.4](./images/9.2.4.png)
     
-    <p align="center"> Figure 9.2.4: ELB before patching </p>
+    *<p align="center"> Figure 9.2.4: ELB before patching </p>*
 
     ![figure9.2.5](./images/9.2.5.png)
     
-    <p align="center"> Figure 9.2.5: Web Application before patching </p>
+    *<p align="center"> Figure 9.2.5: Web Application before patching </p>*
 
     After patching,
     ![figure9.2.6](./images/9.2.6.png)
     
-    <p align="center"> Figure 9.2.6: ELB after patching </p>
+    *<p align="center"> Figure 9.2.6: ELB after patching </p>*
 
     ![figure9.2.7](./images/9.2.7.png)
     
-    <p align="center"> Figure 9.2.7: Web Application after patching </p>
+    *<p align="center"> Figure 9.2.7: Web Application after patching </p>*
 
 ### Version control rollback with the use of image tagging for the production environment
 
@@ -99,7 +99,7 @@ To simulate the version control rollback in the production environment, we need 
 
     ![figure9.3.0](./images/9.3.0.png)
     
-    <p align="center"> Figure 9.3.0: ELB of Production Cluster </p>
+    *<p align="center"> Figure 9.3.0: ELB of Production Cluster </p>*
 
 2. Access the web application to ensure that the web application is in blue color background.
 
@@ -107,6 +107,6 @@ To simulate the version control rollback in the production environment, we need 
 
     ![figure9.3.1](./images/9.3.1.png)
     
-    <p align="center"> Figure 9.3.1: Version Rollback </p>
+    *<p align="center"> Figure 9.3.1: Version Rollback </p>*
 
 4. Verify the web application had rollback to the history version of the red color background.
