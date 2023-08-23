@@ -6,13 +6,13 @@ This section will guide you step by step to set up the project and repository in
 
 1. Navigate to the CodeArts management console page, and create a new project by following the instructions in the below screenshot.
 
-![figure7.1.0](./images/7.1.0.png)
+    ![figure7.1.0](./images/7.1.0.png)
 
 <p align="center"> Figure 7.1.0: Create CodeArts Project </p>
 
 2. Under the services tab, create a new repository by following the instructions in the below screenshots.
 
-![figure7.1.1](./images/7.1.1.png)
+    ![figure7.1.1](./images/7.1.1.png)
 
 <p align="center"> Figure 7.1.1: Create CodeArts Project Repository </p>
 
