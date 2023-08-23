@@ -78,11 +78,13 @@ This section guides you on preparing the CCE clusters for two environments, SIT 
 
 <p align="center"> Figure 7.2.1: Obtain kubeconfig file in CCE Cluster </p>
 
-3. Configure the service endpoints for each CCE cluster under your project in CodeArts by following the instructions in the below screenshot.
+3. Configure the service endpoints for the non-production CCE cluster under your project in CodeArts by following the instructions in the below screenshot.
 
     ![figure7.2.2](./images/7.2.2.png)
 
 <p align="center"> Figure 7.2.2: Configure Service Endpoints for non-production CCE Cluster in CodeArts Project </p>
+
+4. Configure the service endpoints for the production CCE cluster under your project in CodeArts by following the instructions in the below screenshot.
 
     ![figure7.2.3](./images/7.2.3.png)
 
