@@ -2,24 +2,23 @@
 
 ### Introduction
 
-Continuous Integration and Continuous Deployment (CI/CD) is a software development approach that aims to streamline and automate the process of building, testing, and deploying software applications. It's a crucial part of modern software development practices that helps teams deliver high-quality code more rapidly and reliably. CI/CD promotes collaboration among developers, reduces manual errors, and accelerates the time it takes to turn code changes into production-ready applications.
+**Continuous Integration and Continuous Deployment (CI/CD)** is a software development approach that aims to streamline and automate the process of building, testing, and deploying software applications. It's a crucial part of modern software development practices that helps teams deliver high-quality code more rapidly and reliably. CI/CD promotes collaboration among developers, reduces manual errors, and accelerates the time it takes to turn code changes into production-ready applications.
 
-Huawei CodeArts is a one-stop DevSecOps platform that provides out-of-the-box cloud services for requirement delivery, code commit, check, build, verification, deployment, and release throughout the entire software lifecycle to achieve continuous integration and continuous deployment.
+**Huawei CodeArts** is a one-stop DevSecOps platform that provides out-of-the-box cloud services for requirement delivery, code commit, check, build, verification, deployment, and release throughout the entire software lifecycle to achieve continuous integration and continuous deployment.
 
 In this comprehensive guide, we will explore the world of CodeArts service on Huawei Cloud, leverage the features provided in the CodeArts service to build different Continuous Integration and Continuous Deployment pipeline to demonstrate different scenarios as below:
-* Automated Continuous Integration pipeline triggered via code commit
-* Blue-green deployment strategy for the production environment
-* Version control rollback with the use of image tagging for the production environment
+* **Automated Continuous Integration pipeline triggered via code commit**
+* **Blue-green deployment strategy for the production environment**
+* **Version control rollback with the use of image tagging for the production environment**
 
-Throughout this lab manual, we will take you on a journey of configuring the basic elements that are required to build up a complete pipeline in order to achieve the continuous integration and continuous deployment of the web application to different environments. We will guide you step-by-step in configuring the build task, and deployment task and finally combine all the tasks together to make up a CI or CD pipeline. 
-By the end of this lab, you will have a strong foundation in CI/CD pipeline configured using Huawei CodeArts services and you’ll be able to apply these skills to empower and streamline your application development and deployment lifecycle.
+Throughout this lab manual, we will take you on a journey of configuring the basic elements that are required to build up a complete pipeline in order to achieve the continuous integration and continuous deployment of the web application to different environments. We will guide you step-by-step in configuring the build task, and deployment task and finally combine all the tasks together to make up a CI or CD pipeline. By the end of this lab, you will have a strong foundation in CI/CD pipeline configured using Huawei CodeArts services and you’ll be able to apply these skills to empower and streamline your application development and deployment lifecycle.
 
 ### Learning Outcomes
 
 By the end of the lab, we are able to achieve as below:
-* Configure the CI and CD pipeline using the CodeArts services such as Repo, Check, Build, Deploy, pipeline and etc.
-* Configure the CD pipeline to achieve a blue-green deployment strategy in the production environment
-* Configure image version tagging to achieve the version control rollback for the production environment
+* **Configure the CI and CD pipeline using the CodeArts services such as Repo, Check, Build, Deploy, pipeline and etc.**
+* **Configure the CD pipeline to achieve a blue-green deployment strategy in the production environment**
+* **Configure image version tagging to achieve the version control rollback for the production environment**
 
 ### Target Audience
 
@@ -32,6 +31,6 @@ On average, completing all the exercises in this lab will take around 2 hours an
 ### Pre-requisites
 
 Before going through the exercise in this lab, you should have some familiarity on below:
-* Basic understanding of Huawei Cloud resources such as Cloud Container Engine (CCE) and Huawei CodeArts Service
-* Basic understanding of the Continuous Integration (CI) and Continuous Deployment (CD) concept
-* Basic understanding of the Kubernetes YAML scripts
+* **Basic understanding of Huawei Cloud resources such as Cloud Container Engine (CCE) and Huawei CodeArts Service**
+* **Basic understanding of the Continuous Integration (CI) and Continuous Deployment (CD) concept**
+* **Basic understanding of the Kubernetes YAML scripts**
