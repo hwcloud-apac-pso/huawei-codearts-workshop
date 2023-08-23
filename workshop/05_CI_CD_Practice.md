@@ -19,7 +19,7 @@
 
     <p align="center"> Figure 9.1.0: Expected result for new web application </p>
 
-3. To achieve the above result, modify the source code in the index.php file.  Within the <style> tag, perform the actions as in the below screenshots for the styling of different headers.
+3. To achieve the above result, modify the source code in the ```index.php file```.  Within the ```<style>``` tag, perform the actions as in the below screenshots for the styling of different headers.
 
     ![figure9.1.1](./images/9.1.1.png)
 
@@ -49,7 +49,7 @@
 
     <p align="center"> Figure 9.2.0: Modify the scripts in the index.php </p>
 
-3. To achieve such a deployment strategy, we need to release a new version of the application to the SIT and Production environment. Modify the source code in the index.php file, within the <style> tag, and perform the actions as in the below screenshots for the styling of different headers.
+3. To achieve such a deployment strategy, we need to release a new version of the application to the SIT and Production environment. Modify the source code in the ```index.php``` file, within the ```<style>``` tag, and perform the actions as in the below screenshots for the styling of different headers.
 
     ![figure9.2.1](./images/9.2.1.png)
 
@@ -94,6 +94,8 @@
 To simulate the version control rollback in the production environment, we need to patch the service back to the blue deployment from the last step. This is because the deployment contains two versions of the web application (red and blue color background). We can simulate the scenario of version rollback of the web application from version v1.1 (blue color background) to v1.0 (red color background). 
 
 1. First, run the command below to point the ELB to the blue deployment.
+    
+    ```$ kubectl -n ns-devops patch service elb-app-prod  -p '{"spec":{"selector":{"app": "php-fpm-nginx"}}}'```
 
     ![figure9.3.0](./images/9.3.0.png)
     
