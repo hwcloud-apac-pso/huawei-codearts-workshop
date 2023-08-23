@@ -18,7 +18,7 @@ This section will guide you step by step to set up the project and repository in
 
 3. Before you can clone the private repository, or perform any git push actions, you should always set the personal SSH keys to grant the permission of your local machine to the private repository. Follow the instruction below to set the permission for the private repository.
 
-![figure7.1.2](./images/7.1.2.png)
+    ![figure7.1.2](./images/7.1.2.png)
 
 <p align="center"> Figure 7.1.2: Configure SSH Key </p>
 
@@ -32,13 +32,13 @@ This section will guide you step by step to set up the project and repository in
 
 6. Continue to configure the SSH Key in the repository from Step 3.
 
-![figure7.1.3](./images/7.1.3.png)
+    ![figure7.1.3](./images/7.1.3.png)
 
 <p align="center"> Figure 7.1.3: Configure SSH Key </p>
 
 7. Clone the repository to your local machine by following the instructions in the below screenshot.
 
-![figure7.1.4](./images/7.1.4.png)
+    ![figure7.1.4](./images/7.1.4.png)
 
 <p align="center"> Figure 7.1.4: Clone Project Repository </p>
 
@@ -58,6 +58,32 @@ Open an integrated terminal in Visual Studio Code, or any other terminal, and en
 
     ```$ git push```
 
-![figure7.1.5](./images/7.1.5.png)
+    ![figure7.1.5](./images/7.1.5.png)
 
 <p align="center"> Figure 7.1.5: Git commit files to Project Repository </p>
+
+### Set up the production and non-production Cloud Container Engine (CCE) environment
+
+This section guides you on preparing the CCE clusters for two environments, SIT and production in the Singapore region using Terraform. It also involves configuring the CCE clusters service endpoints in your CodeArts project in order to facilitate the web application deployment. 
+
+1. Provision the CCE cluster as a production cluster and non-production cluster. Navigate to the cceenv/sit-demo and cceenv/prod-demo folder directory and run the terraform command to provision the CCE cluster for production and non-production environment. You should see a similar result as the below screenshots.
+
+    ![figure7.2.0](./images/7.2.0.png)
+
+<p align="center"> Figure 7.2.0: CCE Cluster for Production and Non-Production Environment </p>
+
+2. Obtain the kubeconfig file for every single cluster to configure service endpoints in CodeArts by following the instructions in the below screenshots.
+
+    ![figure7.2.1](./images/7.2.1.png)
+
+<p align="center"> Figure 7.2.1: Obtain kubeconfig file in CCE Cluster </p>
+
+3. Configure the service endpoints for each CCE cluster under your project in CodeArts by following the instructions in the below screenshot.
+
+    ![figure7.2.2](./images/7.2.2.png)
+
+<p align="center"> Figure 7.2.2: Configure Service Endpoints for non-production CCE Cluster in CodeArts Project </p>
+
+    ![figure7.2.3](./images/7.2.3.png)
+
+<p align="center"> Figure 7.2.3: Configure Service Endpoints for production CCE Cluster in CodeArts Project </p>
