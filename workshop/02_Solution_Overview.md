@@ -2,7 +2,7 @@
 
 ### Solution Overview
 
-![figure6.0.0](./images/6.0.0.jpg)
+![figure6.0.0](./images/6.0.0.png)
 
 <p align="center"> Figure 6.0.0: Create CodeArts Project Repository </p>
 
