@@ -110,7 +110,7 @@ This section guides you on preparing the CCE clusters for two environments, SIT 
 
 ![figure7.3.3](./images/7.3.3.png)
 
-<p style="margin-left: 40px", align="center"> Figure 7.3.3: Configure CodeArts Deployment Task for non-production CCE cluster </p>
+<p style="margin-left: 40px"> Figure 7.3.3: Configure CodeArts Deployment Task for non-production CCE cluster </p>
 
 
 3. Configure the CodeArts Pipeline using the Pipeline services in CodeArts by following the instructions in the below screenshots.
