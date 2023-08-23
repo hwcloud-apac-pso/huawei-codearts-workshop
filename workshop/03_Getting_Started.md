@@ -20,9 +20,11 @@ This section will guide you step by step to set up the project and repository in
 <p align="center"> Figure 7.1.2: Configure SSH Key </p>
 
 4. Run the below command to generate the SSH key from your local machine. The resulting output will prompt you the path to where your SSH Keys have been stored.
+
 ```$ ssh-keygen```
 
 5. Navigate to the directory shown in Step 4 and type the below command to view the SSH Keys. Copy the SSH Keys content for later use.
+
 ```$ cat id_rsa.pub```
 
 6. Continue to configure the SSH Key in the repository from Step 3.
@@ -36,15 +38,19 @@ This section will guide you step by step to set up the project and repository in
 <p align="center"> Figure 7.1.4: Clone Project Repository </p>
 
 Open an integrated terminal in Visual Studio Code, or any other terminal, and enter the command below to clone the repository.
+
 ```$ git clone https://replace-it-with-your-repository-path```
 
 8. Obtain the source code template by cloning the repository with the below command.
+
 ```$ git clone https://the-source-code-template```
 
 9. Copy all the folders and files that you have obtained in Step 8 into your own repository in Step 7. After that, commit the source code into Repo in Huawei Cloud CodeArts by entering the below command.
+
 ```$ git add --all```
 ```$ git commit -am “init all files”```
 ```$ git push```
+
 ![figure7.1.5](./images/7.1.5.png)
 
 <p align="center"> Figure 7.1.5: Git commit files to Project Repository </p>
