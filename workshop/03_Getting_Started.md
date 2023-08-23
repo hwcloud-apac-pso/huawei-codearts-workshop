@@ -44,13 +44,13 @@ This section will guide you step by step to set up the project and repository in
 
     Open an integrated terminal in Visual Studio Code, or any other terminal, and enter the command below to clone the repository.
 
-    ```$ git clone https://replace-it-with-your-repository-path```
+    ```$ git clone https://replace-it-with-your-codearts-repo```
 
 8. Obtain the source code template by cloning the repository with the below command.
 
-    ```$ git clone https://the-source-code-template```
+    ```$ git clone https://github.com/hwcloud-apac-pso/huawei-codearts-workshop.git```
 
-9. Copy all the folders and files that you have obtained in Step 8 into your own repository in Step 7. After that, commit the source code into Repo in Huawei Cloud CodeArts by entering the below command.
+9. Copy all the folders under the ```./pipeline-deployment``` directory that you have obtained in Step 8 into your own repository in Step 7. After that, commit the source code into Repo in Huawei Cloud CodeArts by entering the below command.
 
     ```$ git add --all```
 
