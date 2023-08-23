@@ -73,6 +73,7 @@
 7. If you have successfully patched the service from blue to green deployment, you will see a similar result as the below screenshots.
     
     **Before patching the services,**
+
     ![figure9.2.4](./images/9.2.4.png)
     
     *<p align="center"> Figure 9.2.4: ELB before patching </p>*
@@ -82,6 +83,7 @@
     *<p align="center"> Figure 9.2.5: Web Application before patching </p>*
 
     **After patching the services,**
+    
     ![figure9.2.6](./images/9.2.6.png)
     
     *<p align="center"> Figure 9.2.6: ELB after patching </p>*
