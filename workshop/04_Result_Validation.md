@@ -1,15 +1,15 @@
 # Result Validation
 
-This section is to validate the functionality of the continuous integration and continuous deployment pipeline in order to deploy a web application to the SIT and Production cluster. It involves deploying the web application to the SIT cluster before the version of the application can be released to the production environment. The version of the web application to be released to both environments is in red color background. Throughout different testing, we will use different color-coded backgrounds to represent different versions of the application to be released to the SIT and Production environment.
+This section is to validate the functionality of the continuous integration and continuous deployment pipeline in order to deploy a web application to the SIT and Production cluster. It involves deploying the web application to the SIT cluster before the version of the application can be released to the production environment. The version of the web application to be released to both environments is in ```red color background```. Throughout different testing, we will use different color-coded backgrounds to represent different versions of the application to be released to the SIT and Production environment.
 
 ###	Validation of System Integration Testing (SIT) Environment
-1. Look for the index.php file under the CodeArts-Repo-Name/index.php directory, within the <style> tag, uncomment the scripts for the background parameter where the value represents the red color as in the below screenshots.
+1. Look for the ```index.php``` file under the ```CodeArts-Repo-Name/index.php``` directory, within the ```<style>``` tag, uncomment the scripts for the background parameter where the value represents the red color as in the below screenshots.
 
     ![figure8.1.0](./images/8.1.0.png)
 
     <p align="center"> Figure 8.1.0: Modify the index.php file </p>
 
-2. Within the <style> tag, uncomment the scripts for the background parameter for all the sections as mentioned below:
+2. Within the ```<style>``` tag, uncomment the scripts for the background parameter for all the sections as mentioned below:
     * .highlight-box {}
     * footer {}
     * .shaded-section h2 {}
@@ -64,8 +64,8 @@ This section is to validate the functionality of the continuous integration and 
 
 1. For the production pipeline, we need to manually trigger the pipeline with the use of the same piece of code that had been submitted during the validation on SIT environment. As the pipeline is triggered manually, we need to set the runtime parameters such as the buildVersion and imageName. Set the runtime parameters with the below information and follow the instructions in the below screenshots.
 
-    buildVersion: v1.0
-    imagName: app-demo-build
+    * buildVersion: v1.0
+    * imagName: app-demo-build
 
     ![figure8.2.0](./images/8.2.0.png)
 
