@@ -66,13 +66,37 @@ This section will guide you step by step to set up the project and repository in
 
 This section guides you on preparing the CCE clusters for two environments, SIT and production in the Singapore region using Terraform. It also involves configuring the CCE clusters service endpoints in your CodeArts project in order to facilitate the web application deployment. 
 
-1. Provision the CCE cluster as a production cluster and non-production cluster. Navigate to the cceenv/sit-demo and cceenv/prod-demo folder directory and run the terraform command to provision the CCE cluster for production and non-production environment. You should see a similar result as the below screenshots.
+1. Provision the CCE cluster as a production cluster and non-production cluster. Navigate to the ```cceenv/sit-demo``` and ```cceenv/prod-demo``` folder directory, and look for the ```provider.tf``` file. Insert the AK and SK inside the provider block. Run the terraform command below to provision the CCE cluster for production and non-production environment. You should see a similar result as the below screenshots.
+
+    Navigate to the cceenv/sit-demo directory, and execute the command below:
+
+    ```$ terraform fmt```
+
+    ```$ terraform init```
+
+    ```$ terraform validate```
+
+    ```$ terraform plan```
+
+    ```$ terraform apply```
+
+    Navigate to the cceenv/prod-demo directory, and execute the command below:
+
+    ```$ terraform fmt```
+
+    ```$ terraform init```
+
+    ```$ terraform validate```
+
+    ```$ terraform plan```
+    
+    ```$ terraform apply```
 
     ![figure7.2.0](./images/7.2.0.png)
 
     <p align="center"> Figure 7.2.0: CCE Cluster for Production and Non-Production Environment </p>
 
-2. Obtain the kubeconfig file for every single cluster to configure service endpoints in CodeArts by following the instructions in the below screenshots.
+2. Obtain the ```kubeconfig``` file for every single cluster to configure service endpoints in CodeArts by following the instructions in the below screenshots.
 
     ![figure7.2.1](./images/7.2.1.png)
 
