@@ -2,7 +2,7 @@
 
 ![figure6.0.0](./images/6.0.0.png)
 
-<p align="center"> Figure 6.0.0: Create CodeArts Project Repository </p>
+<p align="center"> *Figure 6.0.0: Create CodeArts Project Repository* </p>
 
 Figure above is the overall diagram outlining all the elements that will be used to build up the **CI/CD pipeline** to deploy the web application to different environments with image version tagging. It consists mainly of two different parts, an **automated continuous integration CodeArts Pipeline (CI)** and an **automated continuous deployment CodeArts Pipeline (CD)**. The environment is being built on the Huawei Cloud Container Engine (CCE) cluster and there is a total of two CCE clusters that represent SIT and Production environment.
 
