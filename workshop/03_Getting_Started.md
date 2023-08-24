@@ -114,6 +114,12 @@ This section guides you on preparing the CCE clusters for two environments, SIT 
 
     *<p align="center"> Figure 7.2.3: Configure Service Endpoints for production CCE Cluster in CodeArts Project </p>*
 
+5. Create an organization under Software Repository (SWR) service.
+
+    ![figure7.2.4](./images/7.2.4.png)
+
+    *<p align="center"> Figure 7.2.4: Create an organization in SWR </p>*
+
 ### Configure the Continuous Integration Pipeline task
 
 1. Configure the CodeArts Build task for the pipeline using Build services in CodeArts by following the instructions in the below screenshots.
