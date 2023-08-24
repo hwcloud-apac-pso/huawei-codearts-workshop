@@ -28,7 +28,7 @@ This section will guide you step by step to set up the project and repository in
 
 5. Navigate to the directory shown in Step 4 and type the below command to view the SSH Keys. Copy the SSH Keys content for later use.
 
-    ```$ cat id_rsa.pub```
+    ```$ type id_rsa.pub```
 
 6. Continue to configure the SSH Key in the repository from Step 3.
 
