@@ -128,13 +128,13 @@ This section guides you on preparing the CCE clusters for two environments, SIT 
 
     ![figure10.0.0](./images/10.0.0.png)
 
-    *<p align="center"> Figure 10.0.0: Configure CodeArts Build Task </p>*
+    *<p align="center"> Figure 7.3.1.1: Configure CodeArts Build Task </p>*
 
     Once you have configured the task, run the build task manually for the first time.
 
     ![figure10.0.1](./images/10.0.1.png)
 
-    *<p align="center"> Figure 10.0.1: Run the CodeArts Build Task </p>*
+    *<p align="center"> Figure 7.3.1.2: Run the CodeArts Build Task </p>*
 
 2. Configure the CodeArts Deployment task for the pipeline using Deploy services in CodeArts by following the instructions in the below screenshots.
 
